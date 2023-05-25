@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-scren py-2 bg-gray-100">
       <Head>
-        <title>Baitul Arqam Purna Studi</title>
+        <title>Admin Baitul Arqam Purna Studi</title>
         <link
           rel="icon"
           href="../public/assets/projects/logo uhamka.png"
@@ -19,7 +19,7 @@ export default function Home() {
           <div className="lg:grid-cols-2 w-3/5 p-5">
             <div className="text-left font-bold">
               <span className="text-[#192f59]">
-                BAITUL ARQAM PURNA STUDI<br></br>
+                ADMIN BAITUL ARQAM PURNA STUDI<br></br>
               </span>
               UHAMKA
             </div>
@@ -28,13 +28,13 @@ export default function Home() {
                 Sign in to Account
               </h2>
               <div className="border-2 w-10 border-[#192f59] inline-block mb-2"></div>
-              <p className="text-gray-400 my-3">NIM</p>
+              <p className="text-gray-400 my-3">USERNAME</p>
               <div className="flex flex-col items-center">
                 <div className="bg-gray-100 w-64 p-2 flex items-center">
                   <FaRegEnvelope className="text-gray-400 m-2" />
                   <input
-                    type="nim"
-                    name="nim"
+                    type="email"
+                    name="email"
                     placeholder="Username"
                     className="bg-gray-100 outline-none text-sm flex-1"
                   />
@@ -63,18 +63,12 @@ export default function Home() {
                   href="#"
                   className="border-2 border-[#192f59] text-[#192f59] rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#192f59]  hover:text-white"
                 >
-                  Sign In
+                  Log in
                 </a>
               </div>
             </div>
           </div>
           {/* Sign In section */}
-          <div className="lg:grid-cols-2 w-2/5 bg-[#192f59] text-white rounded-tr-2xl rounded-br-2xl py-36 px-12">
-            <h2 className="text-3xl font-bold mb-2 ">
-              Assalamualaikum Sobat UHAMKA!
-            </h2>
-            <div className="border-2 w-10 border-white inline-block mb-2"></div>
-          </div>
         </div>
       </main>
     </div>

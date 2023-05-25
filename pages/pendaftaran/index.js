@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FaRegEnvelope } from "react-icons/fa";
 import { HiUser, HiOutlinePhone } from "react-icons/hi";
 import { MdNumbers } from "react-icons/md";
+import { AiOutlineCaretUp, AiOutlineCaretDown } from "react-icons/ai";
+import Dropdown from "./Dropdown";
 
 export default function Pendaftaran() {
   const Pendaftaran = () => {
@@ -38,6 +40,8 @@ export default function Pendaftaran() {
         // Body of the request is the JSON data we created above.
         body: JSONdata,
       };
+
+      const [isOpen, setIsOpen] = useState(false);
 
       // Send the form data to our forms API on Vercel and get a response.
       const response = await fetch(endpoint, options);
@@ -157,7 +161,7 @@ export default function Pendaftaran() {
         </div>
         <a
           href="#"
-          className="border-2 border-[#192f59] text-[#192f59] rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#192f59]  hover:text-white mt-3 ml-10"
+          className="border-2 border-[#192f59] text-[#192f59] rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#192f59]  hover:text-white"
         >
           Submit
         </a>
