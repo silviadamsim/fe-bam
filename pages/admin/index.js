@@ -2,12 +2,15 @@ import { checkCustomRoutes } from "next/dist/lib/load-custom-routes";
 import Head from "next/head";
 import { FaRegEnvelope } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
+import React from "react";
 
 export default function Home() {
+  const [isAdmin, setIsAdmin] = React.useState("admin");
+
   return (
     <div className="flex flex-col items-center justify-center min-h-scren py-2 bg-gray-100">
       <Head>
-        <title>Admin Baitul Arqam Purna Studi</title>
+        <title>Baitul Arqam Purna Studi</title>
         <link
           rel="icon"
           href="../public/assets/projects/logo uhamka.png"
@@ -16,10 +19,11 @@ export default function Home() {
 
       <main className="flex flex-col items-center justify-center w-full  px-20 text-center h-screen">
         <div className=" bg-white rounded-2xl shadow 2xl flex w-2/3 max-w-4xl">
-          <div className="lg:grid-cols-2 w-3/5 p-5">
+          <div className="lg:grid-cols-2 w-full p-5">
             <div className="text-left font-bold">
               <span className="text-[#192f59]">
-                ADMIN BAITUL ARQAM PURNA STUDI<br></br>
+                {isAdmin === "user" ? "USER" : "Admin"} BAITUL ARQAM PURNA STUDI
+                <br></br>
               </span>
               UHAMKA
             </div>
@@ -59,16 +63,21 @@ export default function Home() {
                   </a>
                 </div>
 
-                <a
+                {/* <a
                   href="#"
                   className="border-2 border-[#192f59] text-[#192f59] rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#192f59]  hover:text-white"
                 >
                   Log in
-                </a>
+                </a> */}
+                <button
+                  onClick={() => setIsAdmin("Admin")}
+                  className="border-2 border-[#192f59] text-[#192f59] rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#192f59]  hover:text-white"
+                >
+                  Login
+                </button>
               </div>
             </div>
           </div>
-          {/* Sign In section */}
         </div>
       </main>
     </div>
