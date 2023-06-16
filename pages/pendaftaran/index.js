@@ -161,7 +161,7 @@ export default function Pendaftaran() {
         </div>
         <a
           href="#"
-          className="border-2 border-[#192f59] text-[#192f59] rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#192f59]  hover:text-white"
+          className="border-2 border-[#192f59] text-[#192f59] rounded-full px-10 py-2 mt-3 ml-10 inline-block font-semibold hover:bg-[#192f59]  hover:text-white"
         >
           Submit
         </a>

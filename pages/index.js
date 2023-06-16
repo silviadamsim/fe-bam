@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full  px-20 text-center h-screen">
-        <div className=" bg-white rounded-2xl shadow 2xl flex w-2/3 max-w-4xl">
+        <div className=" bg-white rounded-2xl shadow 2xl flex  max-w-4xl">
           <div className="lg:grid-cols-2 w-3/5 p-5">
             <div className="text-left font-bold">
               <span className="text-[#192f59]">
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           </div>
           {/* Sign In section */}
-          <div className="lg:grid-cols-2 w-2/5 bg-[#192f59] text-white rounded-tr-2xl rounded-br-2xl py-36 px-12">
+          <div className="lg:grid-cols-2  bg-[#192f59] text-white rounded-tr-2xl rounded-br-2xl py-36 px-12">
             <h2 className="text-3xl font-bold mb-2 ">
               Assalamualaikum Sobat UHAMKA!
             </h2>

@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full  px-20 text-center h-screen">
-        <div className=" bg-white rounded-2xl shadow 2xl flex w-2/3 max-w-4xl">
+        <div className=" bg-white rounded-2xl shadow 2xl flex max-w-4xl">
           <div className="lg:grid-cols-2 w-full p-5">
             <div className="text-left font-bold">
               <span className="text-[#192f59]">
